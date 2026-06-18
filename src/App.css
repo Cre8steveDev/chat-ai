@@ -591,7 +591,7 @@ h1 {
 
 @media (max-width: 920px) {
   .page {
-    padding: 16px;
+    padding: 10px;
     align-items: stretch;
   }
 
@@ -610,13 +610,17 @@ h1 {
     justify-content: center;
     flex-direction: column;
     gap: 5px;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     padding: 0;
     border-radius: 14px;
     border: 1px solid rgba(148, 163, 184, 0.22);
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 60;
   }
 
   .mobile-menu-toggle span {
@@ -626,13 +630,9 @@ h1 {
     background: #0f172a;
   }
 
-  .inline-toggle {
-    width: 40px;
-    height: 40px;
-  }
-
-  .chat-actions .back-link {
+  .chat-back-link {
     padding: 9px 14px;
+    margin-right: 52px;
   }
 
   .mobile-menu-backdrop {
@@ -648,11 +648,11 @@ h1 {
   .mobile-drawer {
     display: block;
     position: fixed;
-    inset: 12px 12px 12px 12px;
+    inset: 10px;
     z-index: 50;
     width: auto;
     max-width: none;
-    padding: 18px;
+    padding: 14px;
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.96);
     border: 1px solid rgba(148, 163, 184, 0.2);
@@ -731,16 +731,24 @@ h1 {
   }
 
   .hero-card {
-    padding: 32px 22px;
+    padding: 28px 18px;
   }
 
   .sidebar-panel,
   .info-panel {
-    padding: 16px;
+    padding: 14px;
+  }
+
+  .chat-topbar {
+    padding-right: 46px;
+  }
+
+  .chat-topbar h1 {
+    font-size: 1.8rem;
   }
 
   .chat-messages {
-    padding: 14px;
+    padding: 12px;
   }
 
   .message-bubble {
@@ -749,14 +757,14 @@ h1 {
 
   .mobile-drawer {
     inset: 8px;
+    padding: 12px;
+  }
+
+  .conversation-card {
     padding: 14px;
   }
 
-  .chat-actions {
-    gap: 8px;
-  }
-
-  .chat-topbar h1 {
-    font-size: 1.8rem;
+  .chat-topbar {
+    gap: 10px;
   }
 }

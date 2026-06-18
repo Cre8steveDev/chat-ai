@@ -325,22 +325,9 @@ function ChatPage() {
               <h1>Football AI Chat</h1>
             </div>
 
-            <div className="chat-actions">
-              <Link to="/" className="back-link">
-                Back Home
-              </Link>
-              <button
-                type="button"
-                className="mobile-menu-toggle inline-toggle"
-                onClick={() => setIsMobileMenuOpen((current) => !current)}
-                aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-                aria-expanded={isMobileMenuOpen}
-              >
-                <span />
-                <span />
-                <span />
-              </button>
-            </div>
+            <Link to="/" className="back-link chat-back-link">
+              Back Home
+            </Link>
           </header>
 
           <div className="conversation-card">
