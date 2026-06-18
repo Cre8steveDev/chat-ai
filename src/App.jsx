@@ -294,14 +294,22 @@ function ChatPage() {
             <p className="eyebrow">Menu</p>
             <h2>Side panels</h2>
           </div>
-          <button type="button" className="drawer-close-btn" onClick={closeMobileMenu}>
+          <button
+            type="button"
+            className="drawer-close-btn"
+            onClick={closeMobileMenu}
+          >
             Close
           </button>
         </div>
 
         <div className="mobile-drawer-sections">
-          <section className="mobile-drawer-panel sidebar-panel">{renderSidebarContent()}</section>
-          <section className="mobile-drawer-panel info-panel">{renderInfoContent()}</section>
+          <section className="mobile-drawer-panel sidebar-panel">
+            {renderSidebarContent()}
+          </section>
+          <section className="mobile-drawer-panel info-panel">
+            {renderInfoContent()}
+          </section>
         </div>
       </aside>
 
@@ -385,9 +393,7 @@ function ChatPage() {
           </div>
         </section>
 
-        <aside className="info-panel">
-          {renderInfoContent()}
-        </aside>
+        <aside className="info-panel">{renderInfoContent()}</aside>
       </section>
     </main>
   );
